@@ -1,0 +1,33 @@
+.createTeamsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 60px);
+  background: #fff;
+  padding: 50px 20px;
+  gap: 10px;
+  overflow: auto;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.createTeamsTitle {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 10px 30px;
+  background: #D1D7E0;
+  color: #24305E;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #868aba !important;
+}
+
+.css-qd0s1z-MuiAutocomplete-root .MuiAutocomplete-tag {
+  background-color: #bcc7d752 !important;
+  color: #868aba;
+}

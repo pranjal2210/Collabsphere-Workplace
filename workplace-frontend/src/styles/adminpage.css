@@ -1,0 +1,123 @@
+.adminpage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.adminUser {
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #6a7983;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.adminUser h3 {
+    color: #a5abb3;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.payrollTitle select {
+    height: 100%;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+    /* margin: 5px 0; */
+}
+
+
+.payrollTitle select:focus {
+    border-color: #1a75ff;
+    /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+
+.payrollTitle select::placeholder {
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+.payroll select:focus::placeholder {
+    color: #1a75ff;
+}
+
+.channelsadmin {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.channelsadmin h3 {
+    color: #a5abb3;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.channelList {
+    display: flex;
+    flex-direction: column;
+    color: #a5abb3;
+    gap: 20px;
+}
+
+.datePickerContainer {
+    width: 100% !important;
+    padding: 0 !important;
+    background-color: #fff !important;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root:focus-within .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: 2px solid #868aba !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    color: #868aba !important;
+    /* top: -7px !important; */
+}
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    padding: 8.5px 14px !important;
+    padding-right: 0 !important;
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+    border-radius: 2px !important;
+    color: #6a7983 !important;
+}
+
+.datePickerDiv {
+    width: 100%;
+    position: relative;
+}
+
+.datePickerDiv .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border: 1px solid #868aba !important;
+}
+
+.css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root {
+    color: #868aba !important;
+    padding: 4px !important;
+}
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+    color: #868aba !important;
+}
+
+.css-1laqsz7-MuiInputAdornment-root {
+    margin-left: 0 !important;
+}
+
+.css-cwhad8-MuiDateCalendar-root {
+    height: 320px !important;
+}

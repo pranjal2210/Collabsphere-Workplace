@@ -1,0 +1,29 @@
+.footer{
+   background: transparent;
+   display: flex;
+   gap: 30px;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 40px;
+   z-index: 2;
+}
+.footer .navLinks a{
+   color: #fff;
+   margin-left: 40px;
+   font-size: 18px;
+}
+.footer .navLinks a:hover{
+   text-shadow: 0px 0px 6px #787cac;
+}
+.head{
+   background-color: #576b90;
+   height: 2px;
+}
+.foot{
+   /* background-color: #576b90; */
+   color: #fff;
+}
+.footer img{
+   animation: none;
+   width: 40px;
+}

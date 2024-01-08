@@ -1,0 +1,9 @@
+.payrollContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    overflow: auto;
+}

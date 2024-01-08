@@ -1,0 +1,96 @@
+.Pcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.Psub-container{
+    height: auto;
+    width: 780px;
+    padding: 20px;
+    border:1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    margin-top: 20px;
+}
+.section2{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.pleft{
+    float: left;
+    width: 50%;
+}
+.pright{
+    float: left;
+    width: 50%;
+    text-align: right;
+    color: rgb(82, 79, 79);
+}
+.subheading{
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(82, 79, 79);
+}
+.phr{
+   height: 1px;
+   width: 100% !important;
+   background-color: black;
+   margin: 15px 0px 0px;
+}
+.employeeInfo{
+    font-size: 14px;
+    color: rgb(82, 79, 79);
+}
+.employeeInfo p{
+    margin-top: 5px;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0486aa5e;
+    color: white;
+  }
+  .salarydiv{
+    height: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow:rgba(50, 50, 93, 0.118) 0px 50px 100px -20px, rgba(0, 0, 0, 0.216) 0px 30px 60px -30px, rgba(16, 49, 81, 0.129) 0px -2px 6px 0px inset;
+    float: left;
+    width: 70%;
+  }
+  .pright2{
+    height: 60px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow:rgba(50, 50, 93, 0.118) 0px 50px 100px -20px, rgba(0, 0, 0, 0.216) 0px 30px 60px -30px, rgba(16, 49, 81, 0.129) 0px -2px 6px 0px inset;
+    float: left;
+    width: 30%;
+    background-color: #0486aa5e;
+    text-align: right;
+  }

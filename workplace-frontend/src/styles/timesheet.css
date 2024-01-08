@@ -1,0 +1,168 @@
+.popup-timesheet {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.wrapper-timesheet {
+    width: 700px;
+    height: auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.wrapper-timesheet h2 {
+    color: #6a7983;
+}
+
+.wrapper-timesheet hr {
+    background-color: #00cacb;
+    height: 1px;
+    width: 10%;
+    margin-top: 4px;
+}
+
+.wrapper-timesheet form {
+    width: 80%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wrapper-timesheet form .tfield {
+    height: 50px;
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    gap: 20px;
+}
+
+.wrapper-timesheet form .tfield select,
+.wrapper-timesheet form .tfield input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+    /* margin: 5px 0; */
+}
+
+.wrapper-timesheet form .tfield input[type="submit"] {
+    background: -webkit-linear-gradient(left, #003366, #004080, #0059b3, #0073e6);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    width: 50%;
+    padding: 10px 30px;
+    display: block;
+    border: 0;
+    outline: none;
+    margin: 10px auto;
+    border-radius: 15px;
+}
+
+.wrapper-timesheet form .tfield input:focus,
+.wrapper-timesheet form .tfield select:focus {
+    border-color: #1a75ff;
+    /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+
+.wrapper-timesheet form .tfield input::placeholder,
+.wrapper-timesheet form .tfield select::placeholder {
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+form .tfield input:focus::placeholder,
+form .tfield select:focus::placeholder {
+    color: #1a75ff;
+}
+
+.label {
+    width: 100%;
+    font-size: 12px;
+}
+
+.label label {
+    color: #24305E;
+}
+
+.closeBtn2 {
+    background: none;
+    color: #6a7983;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 100;
+    transition: all 0.6s ease;
+}
+
+.closeBtn2:hover {
+    color: rgb(255, 89, 89);
+}
+
+
+.timesheetContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    flex: 1;
+    overflow: auto;
+}
+
+.middle-container.timesheettop {
+    gap: 20px;
+}
+
+.timesheettop select {
+    height: 32%;
+    outline: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #00cacb;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+
+.timesheetTitle select:focus {
+    border-color: #1a75ff;
+    /* box-shadow: inset 0 0 3px #fb6aae; */
+}
+
+.timesheetTitle select::placeholder {
+    color: #999;
+    transition: all 0.3s ease;
+}
+
+.timesheetTitle select:focus::placeholder {
+    color: #1a75ff;
+}

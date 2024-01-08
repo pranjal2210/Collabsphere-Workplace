@@ -1,0 +1,148 @@
+.main {
+    background-color: #fff;
+    width: 100%;
+    /* display: flex; */
+}
+
+.subHeader {
+    height: 100vh;
+    display: flex;
+    min-width: 100vw;
+    flex-direction: row;
+    padding: 0 40px;
+    padding-top: 5rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 40px;
+}
+
+.left h1 {
+    font-size: 50px;
+    color: #fff;
+    line-height: 1.75;
+    margin-bottom: 60px;
+}
+
+.left h3 {
+    font-size: 16px;
+    color: #fff;
+}
+.features {
+    /* min-width: 100vw; */
+    height: auto;
+    background-color: #fff;
+    padding: 100px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.left1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.left1 h1 {
+    font-size: 40px;
+    background: -webkit-linear-gradient(left, #286767, #59dcdd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+.left1 h3 {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+}
+
+.right1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card img {
+    width: 60%;
+    filter: drop-shadow(3px 3px 6px #286767);
+}
+.card img:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+    filter: drop-shadow(3px 3px 12px #286767);
+}
+
+.community {
+    /* min-width: 100vw; */
+    /* background-color: #eaebf3; */
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
+    background-size: cover;
+    /* filter: brightness(0.5); */
+    height: 100vh;
+}
+
+.left2 {
+    padding: 100px 40px;
+    z-index: 2;
+}
+
+.left2 h1 {
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 1.25;
+}
+
+.left2 h3 {
+    font-size: 20px;
+    color: #f7f7f7;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.right2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right2 img {
+    width: 80%;
+    filter: drop-shadow(6px 6px 12px #D1D7E0);
+}
+
+.videoTag{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.5);
+}

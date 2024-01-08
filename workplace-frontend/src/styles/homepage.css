@@ -1,0 +1,582 @@
+::-webkit-scrollbar {
+    width: 0rem;
+}
+
+.homepage {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar {
+    height: 40px;
+    background-color: #576b90;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.dot:nth-child(1) {
+    background-color: #00cacb;
+}
+
+.dot:nth-child(2) {
+    background-color: #ebf1f6;
+}
+
+.dot:nth-child(3) {
+    background-color: #f6d82f;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* SIDEBAR START */
+
+.sidebar {
+    width: 18rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 24px;
+    color: #00cacb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 20px;
+    font-weight: 500;
+    height: 88px;
+    border-bottom: 1px solid #D1D7E0;
+}
+
+.logo img {
+    width: 30px;
+}
+
+.middle-wrapper {
+    flex: 1;
+}
+
+.channels {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.channels h3 {
+    color: #a5abb3;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.channel-list {
+    display: flex;
+    flex-direction: column;
+    color: #a5abb3;
+    gap: 20px;
+}
+
+.channel-list .no-channel {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.channel-list .channel-map {
+    cursor: pointer;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.channel-list .color-square {
+    width: 8px;
+    height: 8px;
+}
+
+.channel-list h3 {
+    font-size: 15px;
+    color: #6a7983;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.timesheet {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #6a7983;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.timesheet h3 {
+    color: #a5abb3;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.payroll {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #6a7983;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.payroll h3 {
+    color: #a5abb3;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px;
+    border-top: 1px solid #D1D7E0;
+    cursor: pointer;
+    color: #6a7983;
+    height: 50px;
+}
+
+.logout i {
+    font-size: 20px;
+}
+
+.logout p {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* SIDEBAR END */
+
+/* RIGHTBAR START */
+
+.rightbar {
+    width: 18rem;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    transition: .2s all ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.openRB-div {
+    height: 30px;
+    width: 30px;
+    background-color: #f8fafc;
+    color: #a5abb3;
+    position: absolute;
+    z-index: 3;
+    right: 19rem;
+    top: 83px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    transition: .2s all ease;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    width: 100%;
+    border-bottom: 1px solid #D1D7E0;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.15) 0.4px 2.4px 3.2px;
+}
+
+.userinfo-card {
+    background-color: #7b7eae;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 20px;
+    position: relative;
+}
+
+.userinfo-card p {
+    font-size: 12px;
+    color: #fff;
+}
+
+.userinfo-card p:first-child {
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.blink-user {
+    width: 12px;
+    height: 12px;
+    background: #00cacb;
+    border-radius: 10px;
+    display: inline;
+    position: absolute;
+    left: 54px;
+    bottom: 18px;
+}
+
+.blinker-user {
+    animation: blinksUser 1s infinite;
+}
+
+@keyframes blinksUser {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.userinfo-more {
+    width: 20%;
+    background-color: #868aba;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.convo-alluser {
+    overflow: auto;
+    flex: 1;
+}
+
+.conversations {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.conversations h3 {
+    color: #a5abb3;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.convoWrapper {
+    display: flex;
+    flex-direction: column;
+    color: #a5abb3;
+    gap: 20px;
+}
+
+.convoWrapper div {
+    cursor: pointer;
+    position: relative;
+}
+
+.blink-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blink {
+    width: 8px;
+    height: 8px;
+    background: #00cacb;
+    border-radius: 10px;
+    display: inline;
+    position: absolute;
+    right: 0;
+}
+
+.blinker {
+    animation: blinks 1s infinite;
+}
+
+@keyframes blinks {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.convoWrapper h3 {
+    font-size: 15px;
+    color: #6a7983;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.all-map {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* RIGHTBAR END */
+
+/* MIDDLEBAR STARTS */
+
+.middlebar {
+    background-color: #dde5ee;
+    height: 100%;
+    /* position: relative; */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-container {
+    background: #ebf1f6;
+    width: 100%;
+    height: 88px;
+    border-bottom: 1px solid #D1D7E0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a5abb3;
+    font-size: 20px;
+}
+
+.chatLogo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #bcc1ca;
+    gap: 30px;
+    font-weight: 600;
+    user-select: none;
+}
+
+.chatLogo img {
+    width: 20%;
+}
+
+.middle-container.chatbox {
+    background: #ebf1f6;
+    width: 100%;
+    height: 88px;
+    border-bottom: 1px solid #D1D7E0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.middle-container.chatbox p {
+    color: #6a7983;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* MIDDLEBAR END */
+
+.allUsers {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usersDropdown {
+    display: flex;
+    gap: 40px;
+    color: #D1D7E0;
+    font-size: 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.usersDropdown h3 {
+    /* letter-spacing: 2px; */
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.usersDropdown i {
+    background-color: #D1D7E0;
+    color: #24305E;
+    padding: 4px 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.usersWrapper {
+    display: flex;
+    flex-direction: column;
+    color: #D1D7E0;
+    padding: 20px;
+    gap: 20px;
+    margin-left: 40px;
+}
+
+.usersWrapper div {
+    cursor: pointer;
+}
+
+.usersWrapper h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.channelTitle {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    background: #D1D7E0;
+}
+
+.messageContainer {
+    padding: 20px;
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    overflow: auto;
+}
+
+.textbox {
+    display: flex;
+    height: 50px;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.textBox input {
+    width: 100%;
+    height: 100%;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.paperclip {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #a3b3c5;
+    color: #00cacb;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.textarea {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0px;
+}
+
+.sendMessage {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #a3b3c5;
+    color: #00cacb;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.react-input-emoji--container {
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    
+}
+.react-input-emoji--input {
+    max-height: 50px !important;
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    width: 350px !important;
+    height: 100vh !important;
+    background-color: #fff !important;
+    gap: 8px;
+}
+
+.MuiInputBase-input.Mui-disabled {
+    opacity: 1 !important;
+    -webkit-text-fill-color: currentColor !important;
+}
+
+.css-ank3r8-MuiBadge-badge {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 10px !important;
+    bottom: 1% !important;
+    right: 4% !important;
+}
+
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    width: 500px !important;
+    height: 100vh !important;
+    background-color: #fff !important;
+    gap: 8px;
+}
